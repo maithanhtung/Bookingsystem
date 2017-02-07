@@ -33,7 +33,6 @@ app.use('/api', require('./api/appointment/'));
 
 // Start server
 var port = process.env.PORT || 8080;
-var ip = "127.0.0.1";
-app.listen(port, ip, function() {
+app.listen(port, function() {
   console.log('Express server listening on %d', port);
 });
