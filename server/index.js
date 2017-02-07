@@ -32,7 +32,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api', require('./api/appointment/'));
 
 // Start server
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8080
 , ip = "127.0.0.1";
 app.listen(port, ip, function() {
   console.log('Express server listening on %d', port);
