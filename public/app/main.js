@@ -15,6 +15,12 @@ class MainController {
     // Configure dates
     var today = new Date();
     var dd = today.getDate();
+    var dd1 = new Date();
+    dd1 = today.getDate() + 1 ;
+    var dd2 = new Date();
+    dd2 = today.getDate() + 2;
+    var dd3 = new Date();
+    dd3 = today.getDate() + 3;
     var mm = today.getMonth()+1; //January is 0!
     var yyyy = today.getFullYear();
 
@@ -26,7 +32,7 @@ class MainController {
         mm='0'+mm
     } 
     // Create date and slots array
-    this.days = [{dd:dd,mm:mm,yyyy:yyyy},{dd:dd+1,mm:mm,yyyy:yyyy},{dd:dd+2,mm:mm,yyyy:yyyy},{dd:dd+3,mm:mm,yyyy:yyyy}];
+    this.days = [{dd:dd,mm:mm,yyyy:yyyy},{dd:dd1,mm:mm,yyyy:yyyy},{dd:dd2,mm:mm,yyyy:yyyy},{dd:dd3,mm:mm,yyyy:yyyy}];
     this.slots= [{h:'10',m:'00'},{h:'10',m:'15'},{h:'10',m:'30'},{h:'10',m:'45'},{h:'11',m:'00'},{h:'11',m:'15'},{h:'11',m:'30'}];
   }
   
