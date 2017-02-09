@@ -84,6 +84,7 @@ return a;
 }
 
 
+
   showAdvanced(slot) {
       var vm = this;
     var useFullScreen = (this.$mdMedia('sm') || this.$mdMedia('xs'))  && this.customFullscreen;
@@ -95,7 +96,7 @@ return a;
             $mdDialog.hide(answer);
         };
       },
-      templateUrl: 'app/customer.html',
+      templateUrl: './customer.html',
       locals : {
           slot : slot
       },
@@ -139,13 +140,13 @@ return a;
 
 angular.module('appointmentApp')
   .component('main', {
-    templateUrl: 'app/main.html',
+    templateUrl: 'templates/schedule-ouluhalli.html',
     controller: MainController
   })
- .component('reservation', {
-    templateUrl: 'app/reservation.html',
-    controller: MainController
-  });
+ // .component('reservation', {
+ //    templateUrl: 'app/reservation.html',
+ //    controller: MainController
+ //  });
 
 
 })();
