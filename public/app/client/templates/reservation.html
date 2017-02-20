@@ -1,14 +1,3 @@
-<!-- <section>
-<md-card class="md-whiteframe-z2" flex="33">
-    <md-card-content>
-        <h2>Booked Appointments</h2>
-        <p layout="column" ng-repeat="a in $ctrl.appointments">
-            {{a.name}} ({{a.phone}}) => {{a.date | date:'dd-MMM-yyyy @ h:mma'}}
-        </p>
-    </md-card-content>
-    <md-card-footer></md-card-footer>
-</md-card>
-</section> -->
 <section>
     <md-item ng-repeat="a in $ctrl.appointments">
         <md-item-content>
@@ -16,11 +5,11 @@
                 <user-avatar></user-avatar>
             </div>
             <div class="md-tile-content">
-                <h3>{{a.name}}</h3>
-                <h4>{{a.phone}}</h4>
-                <p>
-                    {{a.date | date:'dd-MMM-yyyy @ h:mma'}}
-                </p>
+                <h3>Location: Ouluhali Court  || Time:    {{a.date | date:'dd-MMM-yyyy @ h:mma'}}<h3>
+                <h4>Phone: {{a.phone}}</h4>
+                <h4>
+                    Registered for person: {{a.name}} 
+                </h4>
             </div>
         </md-item-content>
         <md-card-footer></md-card-footer>

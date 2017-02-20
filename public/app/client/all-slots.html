@@ -1,9 +1,9 @@
 <html>
     <head>
-<!--         <link rel="stylesheet" href="../../css/angular-material.min.css"> -->
-        <link rel="stylesheet" href="css/css-ouluhalli.css">
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+        <link rel="stylesheet" href="css/client-style.css">
     </head>
-    <body ng-app="appointmentApp" layout="column">
+    <body ng-app="appointmentApp" layout="column" ng-controller="AppCtrl">
         <md-toolbar layout="column" class="md-whiteframe-z2">
             <div class="md-toolbar-tools">
                 <h3><a ui-sref="./">My reservation</a></h3>
@@ -21,16 +21,18 @@
                 <div layout-align="start center">Created by Mai Thanh Tung and Le Thuy Hang</div>
             </div>
         </div>
+        <!-- Angular Material Dependencies -->
+        <script type="text/javascript" src="../../js/angular.min.js"></script>
+        <script type="text/javascript" src="../../js/angular-animate.min.js"></script>
+        <script type="text/javascript" src="../../js/angular-aria.min.js"></script>
+        <script type="text/javascript" src="../../js/lodash.js"></script>
+        <script type="text/javascript" src="../../js/moment.js"></script>
 
+        <script src="//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
+        
+        <script src="//cdn.jsdelivr.net/angular-material-icons/0.4.0/angular-material-icons.min.js"></script>
+
+        <script type="text/javascript" src="js/myreservation.js"></script>
+        <script type="text/javascript" src="js/js-ouluhalli.js"></script>
     </body>
-    <script type="text/javascript" src="../../js/angular.min.js"></script>
-    <script type="text/javascript" src="../../js/angular-animate.min.js"></script>
-    <script type="text/javascript" src="../../js/angular-aria.min.js"></script>
-    <script type="text/javascript" src="../../js/angular-material.min.js"></script>
-    <script type="text/javascript" src="../../js/lodash.js"></script>
-    <script type="text/javascript" src="../../js/moment.js"></script>
-    <!--<script type="text/javascript" src="bower_components/angular-moment/angular-moment.js"></script>-->
-      
-    <script type="text/javascript" src="../../app.js"></script>
-    <script type="text/javascript" src="js/js-ouluhalli.js"></script>
 </html>
