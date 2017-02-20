@@ -2,7 +2,7 @@
 
 (function() {
 
-class MainController {
+class ConCacController {
 
  constructor($http,$mdMedia,$mdDialog) {
     this.message = 'Hello';
@@ -96,7 +96,7 @@ return a;
             $mdDialog.hide(answer);
         };
       },
-      templateUrl: './customer.html',
+      templateUrl: 'app/views/client/customer.html',
       locals : {
           slot : slot
       },
@@ -139,14 +139,14 @@ return a;
 
 
 angular.module('appointmentApp')
-  .component('main', {
-    templateUrl: 'templates/schedule-ouluhalli.html',
-    controller: MainController
-  })
- // .component('reservation', {
- //    templateUrl: 'app/reservation.html',
- //    controller: MainController
- //  });
+  // .component('main', {
+  //   templateUrl: '../templates/main.html',
+  //   controller: MainController
+  // })
+ .component('test', {
+    templateUrl: 'templates/reservation.html',
+    controller: ConCacController
+  });
 
 
 })();
